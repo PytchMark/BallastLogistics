@@ -1,5 +1,8 @@
 import { useEffect, useState } from 'react';
 
+const BACKGROUND_VIDEO =
+  'https://res.cloudinary.com/dd8pjjxsm/video/upload/v1770936622/From_KlickPin_CF_Pin_by_Sofia_Valenzuela_on_Pins_creados_por_ti___Earth_illustration_Drawing_house_plans_Logistics_design_afok9y.mp4';
+
 function AnimatedBackground() {
   const [offset, setOffset] = useState({ x: 0, y: 0 });
 
@@ -16,7 +19,17 @@ function AnimatedBackground() {
 
   return (
     <div className="pointer-events-none absolute inset-0 overflow-hidden" aria-hidden="true">
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(61,126,255,0.22),transparent_55%)]" />
+      <video
+        className="absolute inset-0 h-full w-full object-cover opacity-20"
+        src={BACKGROUND_VIDEO}
+        autoPlay
+        muted
+        loop
+        playsInline
+        preload="metadata"
+      />
+      <div className="absolute inset-0 bg-slate-950/70" />
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(61,126,255,0.26),transparent_55%)]" />
       <div
         className="absolute -left-16 top-12 h-72 w-72 rounded-full bg-indigo-500/20 blur-3xl animate-float"
         style={{ transform: `translate3d(${offset.x}px, ${offset.y}px, 0)` }}
