@@ -1,0 +1,16 @@
+FROM node:20-alpine AS build
+WORKDIR /app
+COPY package*.json ./
+# Use npm install (not npm ci) so Cloud Build works even when a lockfile
+# is not committed yet. npm ci hard-fails without package-lock.json.
+RUN npm install
+COPY . .
+RUN npm run build
+
+FROM node:20-alpine AS runtime
+WORKDIR /app
+COPY --from=build /app/dist ./dist
+RUN npm install -g serve
+ENV PORT=8080
+EXPOSE 8080
+CMD ["sh", "-c", "serve -s dist -l ${PORT:-8080}"]
