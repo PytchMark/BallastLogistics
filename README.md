@@ -45,6 +45,8 @@ Build:
 docker build -t ballast-logistics .
 ```
 
+> Note: The Docker build uses `npm install` in the build stage so it works in CI/CD even before a lockfile is committed.
+
 Run locally:
 
 ```bash
@@ -59,4 +61,3 @@ gcloud run deploy ballast-logistics \
   --region us-central1 \
   --allow-unauthenticated
 ```
-
