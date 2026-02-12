@@ -18,7 +18,7 @@ function ContainerRail({ items, onQuote, sourcePrefix }: Props) {
         aria-label="Container options rail"
       >
         {items.map((container) => (
-          <div key={container.id} className="min-w-[320px] max-w-[420px] flex-1">
+          <div key={container.id} className="min-w-[85vw] max-w-[420px] flex-1 sm:min-w-[320px]">
             <ContainerCard container={container} onQuote={onQuote} sourcePrefix={sourcePrefix} />
           </div>
         ))}

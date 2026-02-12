@@ -8,7 +8,7 @@ import QuickQuoteModal from '../components/QuickQuoteModal';
 import { containers } from '../data/containers';
 
 const LOGO_URL =
-  'https://res.cloudinary.com/dd8pjjxsm/image/upload/v1770936131/file_0000000093bc722fb5dbd2bbdb627859_i57or8.png';
+  'https://res.cloudinary.com/dd8pjjxsm/image/upload/v1770938110/file_00000000310c71f5ad848645d26b2c61_kvk5fo.png';
 
 function Home() {
   const [open, setOpen] = useState(false);
@@ -65,16 +65,13 @@ function Home() {
               </ul>
             </div>
 
-            <div className="relative mx-auto w-full max-w-sm">
-              <div className="relative overflow-hidden rounded-3xl border border-white/20 bg-gradient-to-b from-slate-900/70 to-slate-950/70 p-6 shadow-[0_20px_50px_rgba(2,6,23,0.6),inset_0_1px_0_rgba(255,255,255,0.2)] backdrop-blur-xl">
-                <div className="logo-shimmer pointer-events-none absolute inset-0" />
-                <img
-                  src={LOGO_URL}
-                  alt="Ballast Logistics Ltd. logo"
-                  className="relative z-10 mx-auto w-full max-w-[280px] mix-blend-multiply brightness-110 contrast-110 drop-shadow-[0_0_30px_rgba(96,165,250,0.45)]"
-                  loading="lazy"
-                />
-              </div>
+            <div className="mx-auto w-full max-w-sm lg:max-w-md">
+              <img
+                src={LOGO_URL}
+                alt="Ballast Logistics Ltd. logo"
+                className="mx-auto w-full max-w-[320px] drop-shadow-[0_0_30px_rgba(96,165,250,0.45)]"
+                loading="lazy"
+              />
             </div>
           </div>
         </motion.div>
