@@ -10,7 +10,7 @@ function WhatToBuildTiles({ onChoose }: Props) {
       {options.map((option) => (
         <button
           key={option}
-          className="group rounded-xl border border-white/10 bg-white/5 p-4 text-left transition hover:-translate-y-1 hover:border-ballast-300/50 hover:bg-white/10 focus:outline-none focus:ring-2 focus:ring-ballast-300/60"
+          className="group rounded-xl border border-white/20 bg-gradient-to-b from-white/15 to-white/5 p-4 text-left shadow-[0_14px_34px_rgba(2,6,23,0.45),inset_0_1px_0_rgba(255,255,255,0.2)] transition hover:-translate-y-1 hover:border-ballast-300/50 hover:bg-white/10 hover:shadow-[0_20px_42px_rgba(14,116,255,0.26),inset_0_1px_0_rgba(255,255,255,0.25)] focus:outline-none focus:ring-2 focus:ring-ballast-300/60"
           onClick={() => onChoose(option)}
         >
           <p className="text-sm text-slate-300">Build concept</p>
