@@ -80,7 +80,7 @@ function QuickQuoteModal({ isOpen, onClose, source, defaultUseCase, defaultConta
             exit={{ y: 24, opacity: 0 }}
             onClick={(e) => e.stopPropagation()}
             onSubmit={onSubmit}
-            className="w-full max-w-xl rounded-2xl border border-white/10 bg-slate-900/95 p-5 shadow-2xl backdrop-blur"
+            className="max-h-[90vh] w-full max-w-xl overflow-y-auto rounded-2xl border border-white/10 bg-slate-900/95 p-5 shadow-2xl backdrop-blur"
           >
             <div className="mb-4 flex items-center justify-between">
               <h3 className="text-lg font-semibold text-white">Quick Quote</h3>
