@@ -27,7 +27,7 @@ function ContainerCard({ container, onQuote, sourcePrefix }: Props) {
     <article
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
-      className="group snap-start overflow-hidden rounded-2xl border border-white/10 bg-white/5 shadow-lg shadow-black/20 transition hover:-translate-y-1 hover:shadow-glow"
+      className="group snap-start overflow-hidden rounded-2xl border border-white/20 bg-gradient-to-b from-white/15 to-white/5 shadow-[0_16px_42px_rgba(2,6,23,0.5),inset_0_1px_0_rgba(255,255,255,0.2)] transition hover:-translate-y-1 hover:shadow-glow"
     >
       <div className="relative h-52 overflow-hidden bg-gradient-to-br from-slate-800 to-slate-900">
         {container.src ? (
@@ -64,7 +64,7 @@ function ContainerCard({ container, onQuote, sourcePrefix }: Props) {
         </div>
         <button
           onClick={() => onQuote(`${sourcePrefix} > ${container.title}`, container.ctaKey)}
-          className="w-full rounded-xl border border-ballast-300/40 bg-ballast-500/20 px-4 py-2 text-sm font-medium text-ballast-300 transition hover:border-ballast-300 hover:bg-ballast-500 hover:text-white focus:outline-none focus:ring-2 focus:ring-ballast-300/60"
+          className="w-full rounded-xl border border-ballast-300/55 bg-gradient-to-b from-ballast-400/45 to-ballast-600/35 px-4 py-2 text-sm font-medium text-ballast-100 shadow-[0_10px_24px_rgba(14,116,255,0.25),inset_0_1px_0_rgba(255,255,255,0.28)] transition hover:border-ballast-300 hover:from-ballast-300 hover:to-ballast-500 hover:text-white focus:outline-none focus:ring-2 focus:ring-ballast-300/60"
         >
           Get pricing
         </button>
