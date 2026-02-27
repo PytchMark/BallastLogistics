@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 
 const BACKGROUND_VIDEO =
-  'https://res.cloudinary.com/dd8pjjxsm/video/upload/v1770936622/From_KlickPin_CF_Pin_by_Sofia_Valenzuela_on_Pins_creados_por_ti___Earth_illustration_Drawing_house_plans_Logistics_design_afok9y.mp4';
+  'https://res.cloudinary.com/dd8pjjxsm/video/upload/v1772210298/From_Main_Klickpin_CF-_Pinterest_Video_-_7AXvxxxdi_qqaixq.mp4';
 
 function AnimatedBackground() {
   const [offset, setOffset] = useState({ x: 0, y: 0 });
@@ -28,7 +28,7 @@ function AnimatedBackground() {
         playsInline
         preload="metadata"
       />
-      <div className="absolute inset-0 bg-slate-950/70" />
+      <div className="absolute inset-0 bg-slate-950/40" />
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(61,126,255,0.26),transparent_55%)]" />
       <div
         className="absolute -left-16 top-12 h-72 w-72 rounded-full bg-indigo-500/20 blur-3xl animate-float"
