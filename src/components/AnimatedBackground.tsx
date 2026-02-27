@@ -28,7 +28,7 @@ function AnimatedBackground() {
         playsInline
         preload="metadata"
       />
-      <div className="absolute inset-0 bg-slate-950/40" />
+      <div className="absolute inset-0 bg-slate-950/10 md:bg-slate-950/40" />
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(61,126,255,0.26),transparent_55%)]" />
       <div
         className="absolute -left-16 top-12 h-72 w-72 rounded-full bg-indigo-500/20 blur-3xl animate-float"
