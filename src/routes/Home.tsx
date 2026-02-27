@@ -57,11 +57,46 @@ function Home() {
                 </button>
               </div>
               <ul className="mt-8 grid gap-2 text-sm text-slate-200 md:grid-cols-2">
-                <li>• Competitive rates on containers</li>
-                <li>• Financing options available</li>
-                <li>• Delivery guidance</li>
-                <li>• Build your way (no pressure)</li>
-                <li className="md:col-span-2">• Optional connections to recommended professionals (architects/builders)</li>
+                <li className="flex items-start gap-2">
+                  <span className="mt-0.5 inline-flex h-4 w-4 shrink-0 items-center justify-center rounded-full bg-ballast-300/20 text-ballast-200">
+                    <svg viewBox="0 0 16 16" className="h-3 w-3" fill="none" aria-hidden="true">
+                      <path d="M4 8.5 6.5 11 12 5.5" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" />
+                    </svg>
+                  </span>
+                  <span>Competitive rates on containers</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="mt-0.5 inline-flex h-4 w-4 shrink-0 items-center justify-center rounded-full bg-ballast-300/20 text-ballast-200">
+                    <svg viewBox="0 0 16 16" className="h-3 w-3" fill="none" aria-hidden="true">
+                      <path d="M4 8.5 6.5 11 12 5.5" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" />
+                    </svg>
+                  </span>
+                  <span>Financing options available</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="mt-0.5 inline-flex h-4 w-4 shrink-0 items-center justify-center rounded-full bg-ballast-300/20 text-ballast-200">
+                    <svg viewBox="0 0 16 16" className="h-3 w-3" fill="none" aria-hidden="true">
+                      <path d="M4 8.5 6.5 11 12 5.5" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" />
+                    </svg>
+                  </span>
+                  <span>Delivery guidance</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="mt-0.5 inline-flex h-4 w-4 shrink-0 items-center justify-center rounded-full bg-ballast-300/20 text-ballast-200">
+                    <svg viewBox="0 0 16 16" className="h-3 w-3" fill="none" aria-hidden="true">
+                      <path d="M4 8.5 6.5 11 12 5.5" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" />
+                    </svg>
+                  </span>
+                  <span>Build your way (no pressure)</span>
+                </li>
+                <li className="md:col-span-2 flex items-start gap-2">
+                  <span className="mt-0.5 inline-flex h-4 w-4 shrink-0 items-center justify-center rounded-full bg-ballast-300/20 text-ballast-200">
+                    <svg viewBox="0 0 16 16" className="h-3 w-3" fill="none" aria-hidden="true">
+                      <path d="M4 8.5 6.5 11 12 5.5" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" />
+                    </svg>
+                  </span>
+                  <span>Optional connections to recommended professionals (architects/builders)</span>
+                </li>
               </ul>
             </div>
 
