@@ -9,19 +9,23 @@ const links = [
   { href: '/about', label: 'About' },
 ];
 
+const LOGO_URL =
+  'https://res.cloudinary.com/dd8pjjxsm/image/upload/v1770938110/file_00000000310c71f5ad848645d26b2c61_kvk5fo.png';
+
 function Navigation() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <header className="sticky top-3 z-30 px-3 md:px-5">
+    <header className="sticky top-0 z-40 border-b border-white/10 bg-slate-950/35 px-3 py-2 backdrop-blur-xl md:px-5">
       <div className="mx-auto max-w-6xl">
         <div className="rounded-[28px] border border-white/30 bg-white/10 shadow-[0_14px_35px_rgba(2,6,23,0.5),inset_0_1px_0_rgba(255,255,255,0.35),inset_0_-10px_24px_rgba(15,23,42,0.35)] backdrop-blur-2xl">
           <div className="flex items-center justify-between gap-3 px-4 py-3 md:px-6">
             <Link
               to="/"
               onClick={() => setMenuOpen(false)}
-              className="text-base font-semibold tracking-wide text-white drop-shadow-[0_2px_8px_rgba(56,189,248,0.35)] sm:text-lg"
+              className="inline-flex items-center gap-2 text-base font-semibold tracking-wide text-white drop-shadow-[0_2px_8px_rgba(56,189,248,0.35)] sm:text-lg"
             >
+              <img src={LOGO_URL} alt="Ballast Logistics logo" className="h-8 w-8 rounded-full border border-white/25 object-cover" />
               Ballast Logistics Ltd.
             </Link>
 
