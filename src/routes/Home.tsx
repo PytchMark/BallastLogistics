@@ -35,12 +35,14 @@ function Home() {
             <div>
               <p className="text-sm uppercase tracking-[0.3em] text-ballast-300">Ballast Logistics Ltd. · Jamaica</p>
               <h1 className="mt-4 max-w-3xl text-4xl font-semibold leading-tight text-white md:text-5xl">
-                Turn your idea into <span className="text-ballast-300">real space</span> — fast.
+                Reliable, <span className="text-ballast-300">affordable containers</span> for your business.
               </h1>
               <p className="mt-5 max-w-3xl text-lg text-slate-200">
-                We supply quality shipping containers at great rates, with financing options available. Build it your way
-                — and if you need a builder or designer, we can connect you with trusted professionals so you can move from
-                plan to project with confidence.
+                Ballast Logistics supplies quality shipping containers at competitive rates, with practical financing options
+                to help you secure inventory without delay.
+              </p>
+              <p className="mt-3 max-w-3xl text-base text-slate-200">
+                We provide containers for shipping goods, produce, and products for resale across Jamaica.
               </p>
               <p className="mt-3 max-w-3xl text-base text-slate-200">
                 We also provide containers for shipping goods, produce, and products for resale.
