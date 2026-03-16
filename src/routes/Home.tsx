@@ -42,6 +42,9 @@ function Home() {
                 — and if you need a builder or designer, we can connect you with trusted professionals so you can move from
                 plan to project with confidence.
               </p>
+              <p className="mt-3 max-w-3xl text-base text-slate-200">
+                We also provide containers for shipping goods, produce, and products for resale.
+              </p>
               <div className="mt-8 flex flex-wrap gap-3">
                 <button
                   onClick={() => openQuote('Home > Hero CTA')}

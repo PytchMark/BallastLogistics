@@ -16,7 +16,7 @@ function Navigation() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-40 border-b border-white/10 bg-slate-950/35 px-3 py-2 backdrop-blur-xl md:px-5">
+    <header className="fixed inset-x-0 top-0 z-40 border-b border-white/10 bg-slate-950/35 px-3 py-2 backdrop-blur-xl md:px-5">
       <div className="mx-auto max-w-6xl">
         <div className="rounded-[28px] border border-white/30 bg-white/10 shadow-[0_14px_35px_rgba(2,6,23,0.5),inset_0_1px_0_rgba(255,255,255,0.35),inset_0_-10px_24px_rgba(15,23,42,0.35)] backdrop-blur-2xl">
           <div className="flex items-center justify-between gap-3 px-4 py-3 md:px-6">
